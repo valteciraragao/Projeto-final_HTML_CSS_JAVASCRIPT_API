@@ -16,3 +16,7 @@ const getMentores = async() => {
 }
 
 getMentores()
+
+const cadastrarMentor = () => {
+    window.location = 'cadastroMentor.html'
+}

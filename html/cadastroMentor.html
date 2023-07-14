@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../javascript/mentores.js" defer></script>
+    <script src="../javascript/cadastraMentor.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -35,20 +35,25 @@
             </div>
         </header>
         <div class="body">
+            <button>Voltar</button>
             <h4>Mentores</h4>
-            <div class="table">
+            <div class="container">
                 <div class="entry">
-                    <input type="text" placeholder="pesquise uma palavra chave">
-                    <button onclick="cadastrarMentor()">+ Novo Mentor</button>
+                    <h6>Dados</h6>
                 </div>
-                <table>
-                    <thead>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Ações</th>
-                    </thead>
-                    <tbody id="tbody"></tbody>
-                </table>
+                <form id="form">
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input type="text" placeholder="Digite o nome" id="nome" name="nome">
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="Digite o email" id="email" name="email">
+                    </div>
+                    <div class="field">
+                        <button type="submit">Salvar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
