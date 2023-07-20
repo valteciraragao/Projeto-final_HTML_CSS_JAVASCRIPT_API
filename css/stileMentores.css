@@ -1,0 +1,13 @@
+.body{
+    display: flex;
+}
+
+.menu{
+    background: #482D83;
+    height: auto;
+    padding: 1%;
+}
+
+.cabecalho{
+    height: 40%;
+}

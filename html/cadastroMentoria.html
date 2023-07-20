@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../javascript/cadastraMentor.js" defer></script>
+    <script src="../javascript/cadastraMentoria.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +39,7 @@
         
         <section class="body">
             <button>Voltar</button>
-            <h4>Mentores</h4>
+            <h4>Nova mentoria</h4>
         </section>
         <div class="formulario">
             <div class="entry">
@@ -47,12 +47,16 @@
             </div>
             <form id="form">
                 <div class="field">
-                     <label for="nome">Nome</label>
-                     <input type="text" placeholder="Digite o nome" id="nome" name="nome">
+                     <label for="titulo">Titulo da mentoria</label>
+                     <input type="text" placeholder="Digite o titulo da mentoria" id="titulo" name="titulo">
                 </div>
                 <div class="field">
-                    <label for="email">E-mail</label>
-                    <input type="email" placeholder="Digite o email" id="email" name="email">
+                    <label for="turma">Turma</label>
+                    <select type="text" id="mentor" name="mentor"></select>
+                </div>
+                <div class="field">
+                    <label for="email">Status</label>
+                    <input type="text" id="status" name="status">
                 </div>
                 <div class="field">
                     <button type="submit">Salvar</button>

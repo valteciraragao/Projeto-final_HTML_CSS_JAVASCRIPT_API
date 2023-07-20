@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../javascript/cadastraMentor.js" defer></script>
+    <script src="../javascript/cadastraTurmas.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -39,21 +39,61 @@
         
         <section class="body">
             <button>Voltar</button>
-            <h4>Mentores</h4>
+            <h4>Turmas</h4>
         </section>
         <div class="formulario">
             <div class="entry">
                 <h6>Dados</h6>
             </div>
             <form id="form">
-                <div class="field">
-                     <label for="nome">Nome</label>
-                     <input type="text" placeholder="Digite o nome" id="nome" name="nome">
-                </div>
-                <div class="field">
-                    <label for="email">E-mail</label>
-                    <input type="email" placeholder="Digite o email" id="email" name="email">
-                </div>
+                <section>
+                    <h5>Mentorias</h5>
+                    <div class="field">
+                        <label for="mentoria">Mentoria</label>
+                        <select id="mentoria" name="mentoria"></select>
+                    </div>
+                    <div class="field">
+                        <label for="mentor">Mentor</label>
+                        <select id="mentor" name="mentor"></select>
+                    </div>
+                    <div class="field">
+                        <label for="nome">Data de ínicio</label>
+                        <input type="date" id="data" name="data">
+                   </div>
+                   <div class="field">
+                    <label for="nome">Dia da semana</label>
+                    <select name="dia" id="dia">
+                        <option value="segunda">Segunda</option>
+                        <option value="terca">Terça</option>
+                        <option value="quarta">Quarta</option>
+                        <option value="quinta">Quinta</option>
+                        <option value="sexta">Sexta</option>
+                        <option value="sabado">Sabado</option>
+                    </select>
+                    <div class="field">
+                        <label for="dataInicio">Hora de ínicio</label>
+                        <input type="time" id="inicio" name="inicio">
+                   </div>
+                   <div class="field">
+                        <label for="dataFim">Hora de ínicio</label>
+                        <input type="time" id="fim" name="fim">
+                    </div>
+                </section>
+                <section>
+                    <h5>Turma</h5>
+                    <div class="field">
+                        <label for="mentoria">Mentoria</label>
+                        <select id="mentoria" name="mentoria"></select>
+                    </div>
+                    <div class="field">
+                        <label for="link">Link da aula</label>
+                        <input type="text" placeholder="Insira o link do meet" id="link" name="link">
+                   </div>
+                   <div class="field">
+                       <label for="encontros">Qtd de encontros</label>
+                       <input type="number" id="encontros" name="encontros">
+                   </div>
+                </section>
                 <div class="field">
                     <button type="submit">Salvar</button>
                 </div>

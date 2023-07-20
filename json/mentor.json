@@ -1,17 +1,29 @@
 {
   "alunos": [
-    {}
+    {
+      "id": 1,
+      "nome": "Maria Beatriz da Silva",
+      "email": "beamariasilva@gmail.com",
+      "turma": {
+        "id": 1,
+        "codigo": "Turma 01"
+      }
+    },
+    {
+      "nome": "Martino Magalhães Bastos",
+      "email": "mmbastos@gmail.com",
+      "turma": {
+        "id": 1,
+        "codigo": "Turma 01"
+      },
+      "id": 2
+    }
   ],
   "mentores": [
     {
-      "id": 1,
-      "nome": "Carlos de Freitas",
-      "email": "freicarlos@gmail.com"
-    },
-    {
-      "id": 2,
       "nome": "Miguel Casas Novas",
-      "email": "casasnovas@yahoo.com"
+      "email": "casasnovas@yahoo.com",
+      "id": 2
     },
     {
       "id": 3,
@@ -27,12 +39,92 @@
       "nome": "Marcus Severus",
       "email": "severus@gmail.com",
       "id": 5
+    },
+    {
+      "nome": "Bernardo Castro Alves",
+      "email": "alvcasbernardo@live.com",
+      "id": 6
+    },
+    {
+      "nome": "Maria Virgulina",
+      "email": "virgumaria@hotmail.com",
+      "id": 7
+    },
+    {
+      "nome": "Mario Matosinho",
+      "email": "mmtosinho@gmail.com",
+      "id": 8
     }
   ],
   "mentorias": [
-    {}
+    {
+      "id": 1,
+      "titulo": "Fundamentos de Java",
+      "mentor": {
+        "id": 1,
+        "nome": "Carlos de Freitas"
+      },
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "titulo": "Fundamentos de Php",
+      "mentor": {
+        "id": 2,
+        "nome": "Miguel Casas Novas"
+      },
+      "status": "inativo"
+    },
+    {
+      "id": 1,
+      "titulo": "Fundamentos de Java",
+      "mentor": {
+        "id": 1,
+        "nome": "Carlos de Freitas"
+      },
+      "status": "ativo"
+    },
+    {
+      "id": 1,
+      "titulo": "Fundamentos de Java",
+      "mentor": {
+        "id": 1,
+        "nome": "Carlos de Freitas"
+      },
+      "status": "ativo"
+    },
+    {
+      "id": 1,
+      "titulo": "Fundamentos de Java",
+      "mentor": {
+        "id": 1,
+        "nome": "Carlos de Freitas"
+      },
+      "status": "ativo"
+    },
+    {
+      "titulo": "Análise de Dados com Pandas",
+      "mentor": {},
+      "status": "inativo",
+      "id": 3
+    }
   ],
   "turmas": [
-    {}
+    {
+      "id": 1,
+      "codigo": "Turma 01",
+      "mentor": {
+        "id": 1,
+        "nome": "Carlos de Freitas"
+      },
+      "mentoria": {
+        "id": 1,
+        "titulo": "Fundamentos de Java"
+      },
+      "data": "10/07/2023",
+      "dia": "Sexta-feira",
+      "horario": "19:00 - 20:00",
+      "encontros": "0/10"
+    }
   ]
 }
