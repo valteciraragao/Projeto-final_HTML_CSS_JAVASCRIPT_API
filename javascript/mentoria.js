@@ -31,14 +31,14 @@ const getMentorias = async(pesquisa = null) => {
         texto = `?q=${pesquisa}`
     }
     
-    const response = await fetch(`http://localhost:3000/mentorias${texto}`)
+    const response = await fetch(`https://api-projeto-mentorclass.onrender.com/mentorias${texto}`)
     const mentorias = await response.json()
     renderMentorias(mentorias)
 }
 
 
 const excluirMentoria = async (id) =>{
-    await fetch(`http://localhost:3000/mentorias/${id}`,{
+    await fetch(`https://api-projeto-mentorclass.onrender.com/mentorias/${id}`,{
         method: 'DELETE'
     })
     getMentorias()

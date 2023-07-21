@@ -34,14 +34,14 @@ const getTurmas = async(pesquisa = null) => {
         texto = `?q=${pesquisa}`
     }
     
-    const response = await fetch(`http://localhost:3000/turmas${texto}`)
+    const response = await fetch(`https://api-projeto-mentorclass.onrender.com/turmas${texto}`)
     const turmas = await response.json()
     renderTurmas(turmas)
 }
 
 
 const excluirTurma = async (id) =>{
-    await fetch(`http://localhost:3000/turmas/${id}`,{
+    await fetch(`https://api-projeto-mentorclass.onrender.com/turmas/${id}`,{
         method: 'DELETE'
     })
     getTurmas()

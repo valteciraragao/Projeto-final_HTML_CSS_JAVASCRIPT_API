@@ -30,14 +30,14 @@ const getAlunos = async(pesquisa = null) => {
         texto = `?q=${pesquisa}`
     }
     
-    const response = await fetch(`http://localhost:3000/alunos${texto}`)
+    const response = await fetch(`https://api-projeto-mentorclass.onrender.com/alunos${texto}`)
     const alunos = await response.json()
     renderAlunos(alunos)
 }
 
 
 const excluirAluno = async (id) =>{
-    await fetch(`http://localhost:3000/alunos/${id}`,{
+    await fetch(`https://api-projeto-mentorclass.onrender.com/alunos/${id}`,{
         method: 'DELETE'
     })
     getAlunos()

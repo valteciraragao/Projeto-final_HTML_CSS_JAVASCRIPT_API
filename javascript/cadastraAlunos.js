@@ -1,13 +1,13 @@
 const form = document.getElementById("form")
 
 const buscarTurma = async(id) => {
-    const response = await fetch(`http://localhost:3000/turmas/${id}`)
+    const response = await fetch(`https://api-projeto-mentorclass.onrender.com/turmas/${id}`)
     const turma = await response.json()
     return turma
 }
 
 const buscarTurmas = async() => {
-    const response = await fetch('http://localhost:3000/turmas')
+    const response = await fetch('https://api-projeto-mentorclass.onrender.com/turmas')
     const turmas = response.json()
     return turmas
 }
@@ -27,7 +27,7 @@ const carregarSelect = async() => {
 
 
 const cadastrarAluno = async(aluno) => {
-    await fetch("http://localhost:3000/alunos", {
+    await fetch("https://api-projeto-mentorclass.onrender.com/alunos", {
         method: 'POST',
         headers: {
             "Accept": 'application/json, text/plain, */*',

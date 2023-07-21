@@ -2,13 +2,13 @@ const formulario = document.querySelector('form')
 let alunoId = null
 
 const buscarTurma = async(id) => {
-    const response = await fetch(`http://localhost:3000/turmas/${id}`)
+    const response = await fetch(`https://api-projeto-mentorclass.onrender.com/turmas/${id}`)
     const turma = await response.json()
     return turma
 }
 
 const buscarTurmas = async() => {
-    const response = await fetch('http://localhost:3000/turmas')
+    const response = await fetch('https://api-projeto-mentorclass.onrender.com/turmas')
     const turmas = response.json()
     return turmas
 }
@@ -33,7 +33,7 @@ const getIdUrl = () => {
 }
 
 const buscarAluno = async () =>{
-    const response = await fetch(`http://localhost:3000/alunos/${alunoId}`)
+    const response = await fetch(`https://api-projeto-mentorclass.onrender.com/alunos/${alunoId}`)
     const aluno = await response.json()
     return aluno
 } 
@@ -70,7 +70,7 @@ const preencherFormulario = async (aluno) => {
 
 
 const editarAluno = async (aluno) => {
-    await fetch(`http://localhost:3000/alunos/${alunoId}`, {
+    await fetch(`https://api-projeto-mentorclass.onrender.com/alunos/${alunoId}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json, text/plain, */*',

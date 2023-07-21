@@ -11,7 +11,7 @@ form.addEventListener("submit", (even) => {
 })
 
 const cadastrarMentor = async(mentor) => {
-    await fetch("http://localhost:3000/mentores", {
+    await fetch("https://api-projeto-mentorclass.onrender.com/mentores", {
         method: 'POST',
         headers: {
             "Accept": 'application/json, text/plain, */*',
