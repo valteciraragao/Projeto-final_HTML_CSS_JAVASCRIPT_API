@@ -123,8 +123,10 @@
       },
       "data": "10/07/2023",
       "dia": "Sexta-feira",
-      "horario": "19:00 - 20:00",
-      "encontros": "0/10"
+      "horaInicio": "19:00",
+      "horaFim": "20:00",
+      "encontros": "0",
+      "link": "https://meet.google.com/ifr-nabq-hgf"
     }
   ]
 }

@@ -10,8 +10,8 @@ const renderTurmas = (turmas) => {
         <td>${turma.mentoria.titulo}</td>
         <td>${turma.data}</td>
         <td>${turma.diaSemana}</td>
-        <td>${turma.horario}</td>
-        <td>${turma.encontros}</td>
+        <td>${turma.horaInicio}h - ${turma.horaFim}h</td>
+        <td>${turma.encontros}/10</td>
         <td><button onclick = 'editarTurma(${turma.id})'>Alterar</button><button onclick = 'excluirTurma(${turma.id})'>Excluir</button></td>
         </tr>`
         table.innerHTML = table.innerHTML + turmaHtml;
