@@ -1,17 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    background: white;
+}
 
 .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+    width: 35rem;
+    margin: auto;
+    padding-top: 7rem;
 }
 
-.field{
-    display: flex;
-    flex-direction: column;
+.card{
+    box-shadow: 0.5rem 0.5rem 0.5rem gainsboro;
+    background: white;
+    padding: 3.5rem;
+    border-radius: 1rem;
 }
 
-.form .field h3{
-    size: 36px;
-    line-height: 50.4px;
+.card_top{
+    font-family: sora;
+    text-align: left;
+}
+
+.card_access{
+    margin-bottom: 1rem;
+}
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card_access label{
+    font-family: poppins;
+    font-size: 0.7rem;
+    width: 100%;
+    color: #00C247;
+    display: block;
+}
+
+input[name="password"]{
+    background-image: url(../imagem/olho.png);
+    background-repeat: no-repeat;
+    width: 0.1rem;
+    height: 0.1rem;
+}
+
+.card_access input{
+    border-radius: 0.5rem;
+    color: #00C247;
+    outline: 0;
+    width: 100%;
+    height: 1.5rem;
+    border: 0.1rem solid;
+    border-color: #00C247;
+    padding: 0.5rem;
+
+}
+
+.card_access button{
+    background: #482D83;
+    font-family: poppins;
+    color: white;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0;
+    outline: 0;
 }

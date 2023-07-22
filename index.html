@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="./javascript/principal.js"></script>
     <title>Mentorclass</title>
 </head>
 <body>
-    <form class="form">
-        <div class="field">
-            <h5>Seja bem vindo!</h4>
-            <h3>Realize seu login</h1>
-        </div>
-        <div class="field">
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu email" >
-        </div>
-        <div class="field">
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" >
-            <span class="material-symbols-outlined">visibility_off</span>
-        </div>
-        <div class="footer">
-            <input type="checkbox" id="lembrar" name="lembrar" checked>
-            <label for="lembrar">Lembrar-me</label>
-            <a href="">Esqueci minha senha</a>
-        </div>
-        <div class="field">
-            <button onclick = login()>Entrar</button>
+    <form class="form" action="./html/mentores.html">
+        <div class="card">
+            <div class="card_logo">
+                <p>Seja bem vindo!</p>
+                <h2>Realize seu login</h2>
+            </div>
+            <div class="card_access">
+                <label for="email" class="email">E-mail</label>
+                <input type="email" placeholder="yalegomes@gmail.com" >
+            </div>
+            <div class="card_access">
+                <label for="password">Senha</label>
+                <input type="password" placeholder="*********" name="password">
+            </div>
+            <div class="card_footer">
+                <label for="lembrar"><input type="checkbox" id="lembrar" name="lembrar" checked>Lembrar-me</label>
+                <a href="">Esqueci minha senha</a>
+            </div>
+            <div class="card_access">
+                <button type="submit" class="btn">Entrar</button>
+            </div>
         </div>
     </form>
 </body>
