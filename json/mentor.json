@@ -105,11 +105,47 @@
     {
       "titulo": "Análise de Dados com Pandas",
       "mentor": {},
-      "status": "inativo",
+      "status": "ativo",
       "id": 3
     }
   ],
   "turmas": [
+    {
+      "id": 1,
+      "codigo": "Turma 01",
+      "mentor": {
+        "id": 1,
+        "nome": "Carlos de Freitas"
+      },
+      "mentoria": {
+        "id": 1,
+        "titulo": "Fundamentos de Php"
+      },
+      "data": "01/08/2023",
+      "dia": "Segunda",
+      "horaInicio": "19:00",
+      "horaFim": "20:00",
+      "encontros": "0",
+      "link": "https://meet.google.com/ifr-nabq-hgf"
+    },
+    {
+      "id": 1,
+      "codigo": "Turma 02",
+      "mentor": {
+        "id": 1,
+        "nome": "Marcia Ruidigere"
+      },
+      "mentoria": {
+        "id": 1,
+        "titulo": "Análise de Dados com Pandas"
+      },
+      "data": "12/07/2023",
+      "dia": "Sexta-feira",
+      "horaInicio": "18:00",
+      "horaFim": "20:00",
+      "encontros": "3",
+      "link": "https://meet.google.com/abc-nabq-hgf"
+    },
     {
       "id": 1,
       "codigo": "Turma 01",

@@ -24,13 +24,34 @@ body{
     padding-bottom: 1rem;
 }
 
+.container{
+    width: 100%;
+    height: 100%;
+}
+
 .cabecalho{
     display: flex;
+    align-items: center;
+    width: 65rem;
+    justify-content: end;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.cabecalho svg{
+    width: 3rem;
+    height: 3rem;
 }
 
 .card_table{
     padding: 1rem;
     background: #FCFCFC;
+    width: 100%;
+}
+
+.entry{
+    display: flex;
+    gap: 40rem;
 }
 
 .entry button{
@@ -46,7 +67,7 @@ body{
 .entry input{
     width: 15rem;
     height: 0.3rem;
-    border: none;
+    border: 0.1rem solid #E0E0E0;
     border-radius: 1rem;
     padding: 0.9rem;
     outline: none;
@@ -58,10 +79,40 @@ body{
 }
 
 .tabela{
-    width: 85%;
-    height: 70%;
+    width: 90%;
+    height: 80%;
     border-radius: 1rem;
     background: white;
     padding: 1%;
-    margin-top: 5%;
+    margin: 3% auto;
+}
+
+.tabela table{
+    width: 100%;
+    margin: 5% auto;
+    border-collapse: collapse;
+}
+
+.tabela thead{
+    background: #482D83;
+    text-align: left;
+    padding: 1%;
+    color: #ffffff;
+    border: 1rem solid #482D83;
+    border-radius: 0.35rem;
+} 
+
+.logo{
+    width: 12rem;
+    height: 5rem;
+    line-height: 0;
+}
+
+.logo h4{
+    font-family: sora;
+}
+
+.logo p{
+    font-family: poppins;
+    font-size: 0.8rem;
 }
