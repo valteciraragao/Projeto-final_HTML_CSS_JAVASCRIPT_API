@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    display: flex;
+}
+
+.menu{
+    background: #482D83;
+    padding: 1rem; 
+    height: 38rem;
+}
+
+.menu a{
+    color: #ffffff;
+    font-family: poppins;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.menu li{
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container{
+    width: 100%;
+    height: 38rem;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.cabecalho svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo{
+    line-height: 0.1rem;
+}
+
+.logo h2{
+    font-family: sora;
+}
+
+.logo p{
+    font-family: poppins;
+}
+
+.card_form{
+    padding: 1rem;
+    background: #FCFCFC;
+    width: 100%;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.body svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.formulario{
+    width: 90%;
+    height: 20rem;
+    border-radius: 2rem;
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.entry h3{
+    font-family: sora;
+    font-size: 1rem;
+    color: #482D83;
+    text-align: justify;
+    line-height: 0.5rem;
+}
+
+.entry hr{
+    font: #BDBDBD;
+    width: 100%;
+}
+
+.form{
+    display: inline-block;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.field label{
+    font-family: poppins;
+    color: #757575;
+    font-size: 0.8rem;
+}
+
+.field input{
+    width: 20rem;
+    height: 0.3rem;
+    border: 0.1rem solid #E0E0E0;
+    border-radius: 1rem;
+    padding: 0.9rem;
+    outline: none;
+    font-family: poppins;
+    font-size: 0.7rem;
+}
+
+.field button{
+    background: #482D83;
+    font-family: poppins;
+    color: #FFFFFF;
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
