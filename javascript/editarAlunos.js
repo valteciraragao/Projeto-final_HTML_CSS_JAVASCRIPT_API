@@ -18,7 +18,7 @@ const carregarSelect = async() => {
     const turmaSelect = document.getElementById('turma')
     const optionEmpty = new Option('Selecione uma turma')
     turmaSelect.options.add(optionEmpty)
-    
+    console.log(turmas)
     turmas.forEach(turma => {
         const option = new Option(turma.codigo, turma.id)
         turmaSelect.options.add(option)
@@ -38,17 +38,15 @@ const buscarAluno = async () =>{
     return aluno
 } 
 
-formulario.addEventListener('submit', async (even)=>{
+formulario.addEventListener('submit', (even)=>{
     even.preventDefault()
     const nome = formulario.elements['nome'].value
     const email = formulario.elements['email'].value
-    const turma = formulario.elements['turma'].value
 
-    const turmaObjeto = await buscarTurma(turma)
     const aluno = {
         nome,
         email,
-        turma:{
+        turma: {
             id: turmaObjeto.id,
             codigo: turmaObjeto.codigo
         }
@@ -57,15 +55,8 @@ formulario.addEventListener('submit', async (even)=>{
 })
 
 const preencherFormulario = async (aluno) => {
-    let turma = ''
-    if (aluno.turma.id) {
-        turma = aluno.turma.id
-    } else {
-        turma = aluno.turma
-    }
     document.getElementById('nome').value = aluno.nome
     document.getElementById('email').value = aluno.email
-    document.getElementById('turma').value = turma
 }
 
 
@@ -84,8 +75,8 @@ const editarAluno = async (aluno) => {
 const carregarDados = async () => {
     getIdUrl()
     const aluno = await buscarAluno()
-    await carregarSelect()
     preencherFormulario(aluno)
 }
 
+carregarSelect()
 carregarDados()

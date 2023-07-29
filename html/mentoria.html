@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stileMentores.css">
     <script src="../javascript/mentoria.js" defer></script>
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/81b26dc505.js" crossorigin="anonymous"></script>
+    <title>Mentoria</title>
 </head>
 <body class="body">
     <aside class="menu">
@@ -57,26 +58,38 @@
     </aside>
     <div class="container">
         <section id="estrutura" class="cabecalho">
-            <p>Yale Gomes</p>
-            <p>yalegomes@gmail.com</p>
-        </section>
-        <section class="busca">
-            <h4>Mentorias</h4>
-            <div class="entry">
-                <input type="text" placeholder="pesquise uma palavra chave" id="pesquisa">
-                <button onclick="cadastrarMentoria()">+ Nova Mentoria</button>
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"     xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="28" fill="#6950A1"/>
+                <path d="M38.3031 39.2628C37.6954 37.5617 36.3562 36.0586 34.4934 34.9865C32.6305 33.9144 30.348 33.3333 27.9999 33.3333C25.6518 33.3333 23.3693 33.9144 21.5065 34.9865C19.6436 36.0586 18.3044 37.5617 17.6967 39.2628" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <ellipse cx="28.0001" cy="22.6667" rx="5.33333" ry="5.33333" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            <div class="logo">
+                <h4>Yale Gomes</h4>
+                <p>yalegomes@gmail.com</p>
             </div>
         </section>
-        <div class="tabela">
-            <table>
-                <thead>
-                    <th>Título da mentoria</th>
-                    <th>Mentores</th>
-                    <th>Status</th>
-                    <th>Ações</th>
-                </thead>
-                <tbody id="tbody"></tbody>
-            </table>     
+        <div class="card_table">
+            <section>
+                <h2>Mentorias</h2>
+            </section>
+            <div class="tabela">
+                <div class="entry">
+                    <div class="icon">
+                        <input type="text" placeholder="Pesquise uma palavra chave" id="pesquisa" class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <button onclick="cadastrarMentoria()">+ Nova Mentoria</button>
+                </div>
+                <table>
+                    <thead>
+                        <th class="name">Título da mentoria</th>
+                        <th>Mentores</th>
+                        <th>Status</th>
+                        <th class="action">Ações</th>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>        
+            </div>
         </div>
     </div>
 </body>
