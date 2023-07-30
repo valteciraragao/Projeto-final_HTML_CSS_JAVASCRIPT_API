@@ -82,18 +82,23 @@
                 <form id="form">
                     <div class="card_table">
                         <div class="field">
-                            <label for="nome">Título da mentoria</label>
-                            <input type="text" id="nome" name="nome" />
+                            <label for="titulo">Título da mentoria</label>
+                            <input type="text" id="titulo" name="titulo" />
                        </div>
                        <div class="field">
-                           <label for="email">Mentoria</label>
-                           <select type="email" id="email" name="email"></select>
+                           <label for="mentor">Mentor</label>
+                           <select id="mentor" name="mentor"></select>
                        </div>
                     </div>
-                    <div class="field_check">
-                        <div><label for="status">Status</label></div>
-                        <input type="checkbox" id="check" name="check" checked>
-                        <div><p>Ativo</p></div>
+                    <div class="field">
+                        <label for="status">Status</label>
+                        <label class="toggle">
+                            <div class="box">
+                                <input type="checkbox"/>
+                                <span class="slider round"></span>
+                                <span id="ativoInativo" class="ativoInativo">Inativo</span>
+                            </div>
+                        </label>
                    </div>
                     <div class="field">
                         <button type="submit">Salvar</button>

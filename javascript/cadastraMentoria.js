@@ -1,18 +1,24 @@
 const form = document.getElementById("form")
 
-const buscarMentor = async(id) => {
+const toggle = document.querySelector('.toggle input')
+toggle.addEventListener('click', () => {
+    let ativoInativo = toggle.parentNode.querySelector('.ativoInativo')
+    ativoInativo.textContent = toggle.checked ? 'Ativo' : 'Inativo'
+})
+
+const buscarMentor = async (id) => {
     const response = await fetch(`https://api-projeto-mentorclass.onrender.com/mentores/${id}`)
     const mentor = await response.json()
     return mentor
 }
 
-const buscarMentores = async() => {
+const buscarMentores = async () => {
     const response = await fetch('https://api-projeto-mentorclass.onrender.com/mentores')
     const mentores = response.json()
     return mentores
 }
 
-const carregarSelect = async() => {
+const carregarSelect = async () => {
     const mentores = await buscarMentores()
     const mentorSelect = document.getElementById('mentor')
     const optionEmpty = new Option('Selecione um mentor...')
@@ -42,7 +48,7 @@ form.addEventListener("submit", async (even) => {
     even.preventDefault()
     const titulo = form.elements['titulo'].value
     const mentor = form.elements['mentor'].value
-    const status = form.elements['status'].value
+    const status = ativoInativo.textContent
 
     const mentorObjeto = await buscarMentor(mentor)
     const mentoria ={
