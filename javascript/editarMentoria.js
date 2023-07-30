@@ -26,7 +26,7 @@ const carregarSelect = async () => {
     mentorSelect.options.add(optionEmpty)
     
     mentores.forEach(mentor => {
-        const option = new Option(mentor.nome, mentor.email, mentor.id)
+        const option = new Option(mentor.nome, mentor.id)
         mentorSelect.options.add(option)
     })
 }

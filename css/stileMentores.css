@@ -20,14 +20,6 @@ body{
     text-decoration: none;
 }
 
-.menu a :hover{
-    background: #7682C1;
-    font-family: poppins;
-    font-weight: semibolder;
-    border: 0.5rem;
-    border-radius: 0.5rem;
-}
-
 .menu li{
     list-style-type: none;
     padding-top: 1rem;
