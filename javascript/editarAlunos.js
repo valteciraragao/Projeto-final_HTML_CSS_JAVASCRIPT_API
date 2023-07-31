@@ -1,19 +1,19 @@
 const formulario = document.querySelector('form')
 let alunoId = null
 
-const buscarTurma = async(id) => {
+const buscarTurma = async (id) => {
     const response = await fetch(`https://api-projeto-mentorclass.onrender.com/turmas/${id}`)
     const turma = await response.json()
     return turma
 }
 
-const buscarTurmas = async() => {
+const buscarTurmas = async () => {
     const response = await fetch('https://api-projeto-mentorclass.onrender.com/turmas')
     const turmas = response.json()
     return turmas
 }
 
-const carregarSelect = async() => {
+const carregarSelect = async () => {
     const turmas = await buscarTurmas()
     const turmaSelect = document.getElementById('turma')
     const optionEmpty = new Option('Selecione uma turma')
@@ -38,11 +38,12 @@ const buscarAluno = async () =>{
     return aluno
 } 
 
-formulario.addEventListener('submit', (even)=>{
+formulario.addEventListener('submit', async (even)=>{
     even.preventDefault()
     const nome = formulario.elements['nome'].value
     const email = formulario.elements['email'].value
 
+    const turmaObjeto = await buscarTurma(turma)
     const aluno = {
         nome,
         email,

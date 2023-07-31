@@ -10,7 +10,7 @@ body{
 .menu{
     background: #482D83;
     padding: 1rem; 
-    min-height: 100%;
+    min-height: 40rem;
 }
 
 .menu a{
@@ -34,7 +34,7 @@ body{
 .cabecalho{
     display: flex;
     align-items: center;
-    width: 66rem;
+    width: 65rem;
     justify-content: end;
     margin: 1rem;
     gap: 1rem;
@@ -47,14 +47,17 @@ body{
 
 .logo{
     line-height: 0.1rem;
+    width: 12rem;
+    height: 5rem;
 }
 
-.logo h2{
+.logo h4{
     font-family: sora;
 }
 
 .logo p{
     font-family: poppins;
+    font-size: 0.8rem;
 }
 
 .card_form{
@@ -126,6 +129,30 @@ body{
     font-family: poppins;
     font-size: 0.7rem;
 }
+
+.field_class{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.field_class input{
+    width: 10rem;
+    height: 0.3rem;
+    border: 0.1rem solid #E0E0E0;
+    border-radius: 1rem;
+    padding: 0.9rem;
+    outline: none;
+    font-family: poppins;
+    font-size: 0.7rem;
+}
+
+.field_class label{
+    font-family: poppins;
+    color: #757575;
+    font-size: 0.8rem;
+}
+
 
 .field button{
     background: #482D83;
